@@ -206,10 +206,15 @@ li.drop:hover .dropdown-content {
     flex-direction: row;
     background-color: black;
     color: #FFFFFF;
-    align-items: left;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.address {
+    margin-left: 130px;
 }
 .contact {
+    
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -226,16 +231,40 @@ li.drop:hover .dropdown-content {
     border: none;
     left: 868px;
     bottom: 128px;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button-footer.btn1 {
+    padding: 10px;
     align-items: center;
 }
+
 .contact button:hover {
     opacity: 80%;
     cursor: pointer;
 }
-.logo-footer {
-    align-items: center;
+.logo-footer { 
     display: flex;
     flex-direction: row; 
+    align-items: center;
+    margin-right: 130px;
+}
+.createdby {
+    margin-right: 30px;
+}
+.logo-footer p {
+    height: 12.21px;
+    left: 72.6%;
+    right: 24.03%;
+    bottom: 120.79px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.6017px;
+    line-height: 14px;
+    color: #E9BF33;
 }
 
 /* Slider Produtos */
