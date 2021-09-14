@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+body {
+    font-family:'Nunito', sans-serif;
+}
+ nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+    
+}
+.menu ul {
+    justify-content: space-between;
+    list-style:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+  
+  li {
+    float: left;
+}
+  .menu ul li a {
+    text-decoration: none;
+    color: #333333
+}
+  li.drop {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li:hover {
+    background-color: #E9BF33;
+}
+
+.drop:hover .dropdown-content {
+    display: block;
+}
+
+
+.sitesearch {
+    border-bottom: 1px solid #7A7A7A;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.sitesearch input{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+}
+.search-button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.search-button:hover {
+    cursor: pointer;
+}
+.form {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background: #F2F2F2;
+    height: 146px;
+    bottom: 222px;
+    width: 1920px;
+    height: 146px;
+    top: 1012px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form input {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 280px;
+    height: 48px;
+    border: none;
+    margin-right: 8px;
+    padding-left: 16px;
+    outline: none;
+}
+
+.form button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    width: 140px;
+    height: 48px;
+    background: #E9BF33;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    
+}
+.form button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+.mail-svg {
+    fill: aliceblue;
+}
+.products h3 {
+    font-family:'Nunito', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.products {
+    width: 138px;
+    height: 28px;
+    left: 380px;
+    top: 536px;
+    align-items: left;
+    justify-content: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: #FFFFFF;
+    align-items: left;
+    justify-content: center;
+}
+.contact {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.button-footer {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    width: 195px;
+    height: 38px;
+    background: #E9BF33;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    left: 868px;
+    bottom: 128px;
+    align-items: center;
+}
+.contact button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+.logo-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row; 
+}
