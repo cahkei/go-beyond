@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 body {
     font-family:'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
 }
  nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: #000;
-    
+    margin-left: 130px;
+    margin-right: 130px;
 }
-.menu ul {
+.menu {
     justify-content: space-between;
     list-style:none;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     width: auto;
-} 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f1f1f1;
+    display: flex;
     text-decoration: none;
+} 
+.menu >li {
+    margin-right: 35px;
 }
-  
-  li {
-    float: left;
-}
-  .menu ul li a {
+
+.menu a {
     text-decoration: none;
     color: #333333
 }
-  li.drop {
+.menu li.drop {
     display: inline-block;
 }
 
@@ -46,6 +41,7 @@ ul {
     min-width: 140px;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding: 0;
 }
 
 .dropdown-content li {
@@ -60,7 +56,7 @@ ul {
     background-color: #E9BF33;
 }
 
-.drop:hover .dropdown-content {
+li.drop:hover .dropdown-content {
     display: block;
 }
 
@@ -69,7 +65,7 @@ ul {
     border-bottom: 1px solid #7A7A7A;
     margin: 0;
     padding: 0;
-    position: absolute;
+    height: 30px;
 }
 .sitesearch input{
     border: none;
@@ -87,13 +83,63 @@ ul {
 .search-button:hover {
     cursor: pointer;
 }
+.account {
+    text-align: center;
+}
+.account a {
+    text-decoration: none;
+    color: black;
+}
+.slider-banner {
+    position: relative;
+    text-align: center;
+    height: 430px;
+}
+.slider-banner img {
+    width: 100%;
+    height: 100%;
+}
+.slider-banner-text {
+    position: absolute;
+    color: white;
+    width: 701px;
+    height: 147px;
+    left: 280px;
+    top: 150px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+}
+.slider-banner-text-2 {
+    position: absolute;
+    color: #E9BF33;
+    top: 260px;
+    left: 660px;    
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 21px;
+}
+.mySlides {
+    display:none;
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+}
+.w3-badge {
+    height: 50px;
+    width:13px;
+    padding:0;
+    margin: 0;
+}
 .form {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     background: #F2F2F2;
     height: 146px;
     bottom: 222px;
-    width: 1920px;
+    width: 100%;
     height: 146px;
     top: 1012px;
     display: flex;
@@ -135,14 +181,25 @@ ul {
     font-family:'Nunito', sans-serif;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 0;
+}
+.container-products {
+    margin-left: 130px;
+    margin-right: 130px;
 }
 .products {
     width: 138px;
     height: 28px;
     left: 380px;
     top: 536px;
+    margin-bottom: 20px;
     align-items: left;
     justify-content: center;
+}
+.products-line {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 .footer {
     display: flex;
@@ -179,4 +236,160 @@ ul {
     align-items: center;
     display: flex;
     flex-direction: row; 
+}
+
+/* Slider Produtos */
+
+.slider-box {
+    height: 353px;
+    width: 216px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 0.40);
+}
+
+.slider-box a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.img-box {
+    height: 170px;
+    Width: 216px;
+    margin-top: -40px;
+}
+
+.img-box img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.off {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    line-height:0;
+    width:0;
+    height:0;
+    border: 40px solid;
+    border-color: #F8475F #F8475F transparent transparent;
+}
+
+
+.promo {
+    position: relative;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+    margin-top: -23px;
+}
+
+.detalhes {
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.classificacao {
+    color: #FFD874;
+    margin: 0 0 7px 0;
+}
+
+.preco1 {
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.preco2 {
+    color: #000000;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.parcelamento {
+    font-family: Nunito;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.carrinho {
+    position: absolute;
+    bottom: 10px;
+    background-color: #3d5248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 86.69%;
+    background: #00E676;
+    border-radius: 5px;
+    Width: 170px;
+    Height: 32,42px;
+}
+
+.carrinho a{
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.slider-box:hover {
+    box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.40);
+}
+
+.slider-box:hover .off {
+    z-index: 1;
+}
+
+.slider-box:hover .img-box img {
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+    box-shadow: rgba(47, 47, 47, 0.40);
+    transition: all ease 0.1s;
+}
+
+.carrinho:hover {
+    transform: scale(1.1);
+    background-color: #00E676;
+    cursor: pointer;
 }
